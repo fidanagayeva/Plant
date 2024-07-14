@@ -432,3 +432,107 @@
         }
       }
     }
+
+    .questions-section {
+      @include flex($justify: space-between);
+      padding: 1rem;
+      margin-top: 3.5rem;
+      margin-bottom: 3.5rem;
+    
+      .left-content {
+        width: 50%;
+    
+        h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          font-weight: 450;
+        }
+    
+        p {
+          font-size: 1rem;
+          color: #666;
+          margin-bottom: 1.5rem;
+        }
+    
+        .contact-button {
+          padding: 0.75rem 1.5rem;
+          background-color: $button-color;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+    
+          &:hover {
+            background-color: $button-color-hover;
+          }
+        }
+      }
+    
+      .right-content {
+        display: flex;
+        gap: 1rem;
+    
+        .profile-card {
+          position: relative;
+          width: 26.1rem;
+          overflow: hidden;
+          text-align: center;
+    
+          img {
+            width: 100%;
+            height: 33rem;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+          }
+    
+          &:hover img {
+            transform: scale(1.1);
+          }
+    
+          .profile-info {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+    
+            h2 {
+              font-size: 1.5rem;
+              margin: 0;
+              margin-bottom: 1rem;
+            }
+    
+            p {
+              font-size: 1rem;
+              color: rgba(255, 255, 255, 0.575);
+              margin-bottom: 1rem;
+              font-weight: bold;
+            }
+    
+            .social-icons {
+              @include flex($justify:center);
+              gap: 1rem;
+              margin-top: 5px;
+    
+              button {
+                background-color: $btn-rgba;
+                border-radius: 100%;
+                border: 1px solid $btn-rgba;
+                width: 37px;
+                height: 37px;
+    
+                i {
+                  font-size: 1.5rem;
+                  color: #fff;
+                  cursor: pointer;
+                  transition: color 0.3s ease;
+                  @include flex($justify: center,$item:center);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
