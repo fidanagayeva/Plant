@@ -143,3 +143,24 @@ button {
           }
         }
       }
+
+      .subscription-form input[type="email"] {
+        padding: 0.5rem;
+        border: 1px solid $email-bg-color;
+        margin-right: 1rem;
+        flex: 1;
+        height: 23px;
+        font-size: 15px;
+        background-color: $email-bg-color;
+      }
+      
+      .subscription-form button {
+        padding: 0.5rem 1rem;
+        background-color: $button-color;
+        color: $background-color;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background-color: $button-color-hover;
+        }
+      }

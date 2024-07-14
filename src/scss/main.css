@@ -756,27 +756,6 @@ hr {
   margin-bottom: 25px;
 }
 
-.subscription-form input[type=email] {
-  padding: 0.5rem;
-  border: 1px solid rgba(94, 104, 33, 0.0901960784);
-  margin-right: 1rem;
-  flex: 1;
-  height: 23px;
-  font-size: 15px;
-  background-color: rgba(94, 104, 33, 0.0901960784);
-}
-
-.subscription-form button {
-  padding: 0.5rem 1rem;
-  background-color: rgb(94, 104, 33);
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-.subscription-form button:hover {
-  background-color: rgb(89, 99, 28);
-}
-
 .privacy {
   font-size: 17px;
   color: #555;
@@ -1204,4 +1183,25 @@ button:hover {
 .custom-card-img-btn button:hover {
   background-color: rgb(89, 99, 28);
   color: gray;
+}
+
+.subscription-form input[type=email] {
+  padding: 0.5rem;
+  border: 1px solid rgba(94, 104, 33, 0.0901960784);
+  margin-right: 1rem;
+  flex: 1;
+  height: 23px;
+  font-size: 15px;
+  background-color: rgba(94, 104, 33, 0.0901960784);
+}
+
+.subscription-form button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(94, 104, 33);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.subscription-form button:hover {
+  background-color: rgb(89, 99, 28);
 }/*# sourceMappingURL=main.css.map */
