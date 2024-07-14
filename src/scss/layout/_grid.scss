@@ -1,3 +1,11 @@
 @use "../utils/variables" as *;
 @use "../utils/mixin" as *;
 @use "../base/reset" as *;
+
+
+.instagram__cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 0 20px;
+}
