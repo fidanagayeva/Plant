@@ -510,6 +510,69 @@ hr {
   align-items: center;
 }
 
+.contact-title {
+  font-weight: 500;
+  font-size: 28px;
+  color: rgb(94, 104, 33);
+  padding: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3rem 4rem 2rem 4rem;
+}
+.contact-info .left-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.contact-info .right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60%;
+}
+.contact-info .right-section .contact-details {
+  flex-grow: 1;
+}
+.contact-info .right-section .contact-details .contact-detail {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  margin-left: -10rem;
+}
+.contact-info .right-section .contact-details .contact-detail strong {
+  width: 10rem;
+  font-weight: bold;
+}
+.contact-info .right-section .contact-details .contact-detail p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+.contact-info .right-section .contact-person p {
+  font-size: 1.1rem;
+  color: black;
+}
+
+.jump-container-img {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+.jump-container-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.jump-container-img img:hover {
+  transform: scale(1.1);
+}
+
 .menu-cards {
   display: flex;
   justify-content: space-between;
