@@ -54,6 +54,20 @@ hr {
   margin-right: 20px;
 }
 
+.product-card-title h2 {
+  margin-top: 5.5rem;
+  margin-bottom: 1.3rem;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 1.3rem;
+}
+
+.product-card-title p {
+  font-size: 17px;
+  color: gray;
+  margin-left: 1.3rem;
+}
+
 .menu-cards {
   display: flex;
   justify-content: space-between;
@@ -111,6 +125,142 @@ hr {
   font-size: 1.1rem;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.836);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 17rem;
+  height: 15.5rem;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 15rem;
+}
+.card .card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.card .card-image-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+.card .card-image-wrapper img.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.card .card-image-wrapper img:hover + .icon-box-sh {
+  opacity: 1;
+  visibility: visible;
+}
+.card .card-image-wrapper img:hover.main-image {
+  opacity: 0;
+}
+.card .card-image-wrapper img:hover.hover-image {
+  opacity: 1;
+}
+.card .card-image-wrapper .icon-box-sh {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 5rem;
+  background-color: white;
+}
+.card .card-image-wrapper .icon-box-sh i {
+  margin-top: 15px;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+.card .card-image-wrapper .discount-badge-card {
+  position: absolute;
+  top: 10px;
+  background: white;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  width: 3.7rem;
+  height: 1.3rem;
+}
+.card .card-image-wrapper .discount-badge-card-new {
+  position: absolute;
+  top: 45px;
+  background: white;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  width: 3.7rem;
+  height: 1.3rem;
+}
+.card .card-title {
+  margin-top: 10px;
+  font-size: 17px;
+}
+.card .card-colors {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.card .card-colors .color-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+.card .card-colors .color-circle.black {
+  background-color: black;
+}
+.card .card-colors .color-circle.peach {
+  background-color: peachpuff;
+}
+.card .card-colors .color-circle.pink {
+  background-color: pink;
+}
+.card .card-colors .color-circle.white {
+  background-color: white;
+  border: 1px solid #ccc;
+}
+.card .card-rating {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+.card .card-rating .star {
+  color: gold;
+  font-size: 18px;
+}
+.card .card-price {
+  margin-top: 5px;
+  font-size: 16px;
+  color: rgb(94, 104, 33);
+  font-weight: bold;
+}
+.card .card-price .card-old-price {
+  text-decoration: line-through;
+  color: #888;
 }
 
 .header {
@@ -314,4 +464,46 @@ button {
 }
 button:hover {
   background-color: rgb(89, 99, 28);
+}
+
+.card-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(94, 104, 33);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.card-button:hover {
+  background-color: rgb(89, 99, 28);
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next,
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 100%;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  color: gray;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  color: gray;
 }/*# sourceMappingURL=main.css.map */

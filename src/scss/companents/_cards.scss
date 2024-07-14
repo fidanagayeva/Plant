@@ -67,3 +67,158 @@
     }
   }
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    @include flex($justify: center, $item: center, $direction:column);
+  }
+  
+  .card {
+    width: 17rem;
+    height: 15.5rem;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15rem;
+  
+    .card-image-wrapper {
+      position: relative;
+      width: 100%;
+      height: auto;
+  
+      img {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.3s ease-in-out;
+  
+        &.hover-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+  
+        &:hover + .icon-box-sh {
+          opacity: 1;
+          visibility: visible;
+        }
+  
+        &:hover {
+          &.main-image {
+            opacity: 0;
+          }
+  
+          &.hover-image {
+            opacity: 1;
+          }
+        }
+      }
+  
+      .icon-box-sh {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        @include flex($direction:column);
+        width: 50px;
+        height: 5rem;
+        background-color: $background-color;
+  
+        i {
+          margin-top: 15px;
+          color: $text-color;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+  
+      .discount-badge-card {
+        position: absolute;
+        top: 10px;
+        background: $background-color;
+        padding: 2px 6px;
+        font-size: 12px;
+        font-weight: bold;
+        color: $text-color;
+        width: 3.7rem;
+        height: 1.3rem;
+      }
+  
+      .discount-badge-card-new {
+        position: absolute;
+        top: 45px;
+        background: $background-color;
+        padding: 2px 6px;
+        font-size: 12px;
+        font-weight: bold;
+        color: $text-color;
+        width: 3.7rem;
+        height: 1.3rem;
+      }
+    }
+  
+    .card-title {
+      margin-top: 10px;
+      font-size: 17px;
+    }
+  
+    .card-colors {
+      margin-top: 10px;
+      @include flex($justify: center);
+      gap: 5px;
+  
+      .color-circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+        border: 1px solid #ddd;
+  
+        &.black {
+          background-color: $text-color;
+        }
+  
+        &.peach {
+          background-color: peachpuff;
+        }
+  
+        &.pink {
+          background-color: pink;
+        }
+  
+        &.white {
+          background-color: $background-color;
+          border: 1px solid #ccc;
+        }
+      }
+    }
+  
+    .card-rating {
+      margin-top: 10px;
+      @include flex($justify: center);
+      gap: 2px;
+  
+      .star {
+        color: gold;
+        font-size: 18px;
+      }
+    }
+  
+    .card-price {
+      margin-top: 5px;
+      font-size: 16px;
+      color: $button-color;
+      font-weight: bold;
+  
+      .card-old-price {
+        text-decoration: line-through;
+        color: #888;
+      }
+    }
+  
+  }
+  

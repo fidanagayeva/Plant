@@ -16,3 +16,49 @@ button {
       background-color: $button-color-hover;
     }
   }
+
+  .card-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: $button-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $button-color-hover;
+    }
+  }
+
+
+  .swiper-button-prev,
+    .swiper-rtl .swiper-button-next,
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+      width: 40px;
+      height: 40px;
+      background-color: $background-color;
+      border-radius: 100%;
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+    
+    }
+  
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+      content: "\f054";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 16px;
+      color: $text-hover;
+      
+    }
+  
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+      content: "\f053";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 16px;
+      color: $text-hover;
+    }
