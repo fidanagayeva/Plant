@@ -335,6 +335,31 @@ hr {
   font-weight: bold;
 }
 
+.about-title p {
+  font-weight: 500;
+  font-size: 28px;
+  color: rgb(94, 104, 33);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.about-title h1 {
+  font-weight: bold;
+  font-size: 68px;
+  color: black;
+  padding: 1rem;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 3.5rem;
+}
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
 .menu-cards {
   display: flex;
   justify-content: space-between;

@@ -345,3 +345,31 @@
         }
       }
     }
+
+    .about-title{
+      p{
+        font-weight: 500;
+        font-size: 28px;
+        color: $button-color;
+        padding: 1rem;
+        margin-bottom: 2rem;
+      }
+    
+      h1{
+        font-weight: bold;
+        font-size: 68px;
+        color: $text-color;
+        padding: 1rem;
+      }
+    }
+    
+    .about-img {
+      @include flex($content);
+      margin: 1rem 0 3.5rem;
+    
+      img{
+        max-width: 100%;
+        height: auto;
+        border: 0;
+      }
+    }
