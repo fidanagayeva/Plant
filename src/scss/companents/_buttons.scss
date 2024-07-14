@@ -1,3 +1,18 @@
 @use "../utils/variables" as *;
 @use "../utils/mixin" as *;
 @use "../base/reset" as *;
+
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: $button-color;
+    color: $background-color;
+    border: none;
+    cursor: pointer;
+    width: 170px;
+    height: 40px;
+
+    &:hover {
+      background-color: $button-color-hover;
+    }
+  }

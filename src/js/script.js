@@ -22,3 +22,39 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  new Swiper(".cardSlider", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+      },
+      breakpoints: {
+          1400: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+          },
+          992: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+          },
+          576: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+          },
+          350: {
+              slidesPerView: 1,
+              spaceBetween: 2,
+          },
+      },
+  });
+});
