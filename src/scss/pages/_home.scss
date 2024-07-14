@@ -216,3 +216,132 @@
       margin-bottom: 2.7rem;
       margin-top: 5.5rem;
     }
+
+    .care-title{
+      font-weight: 500;
+      font-size: 28px;
+      color: $button-color;
+      padding: 1rem;
+    }
+    
+    .care {
+      padding: 1rem;
+    
+      .container {
+        @include flex($wrap: wrap);
+    
+        .jump-container,
+        .care-woodmart-title {
+          width: 50%;
+        }
+    
+        .jump-container {
+          @include flex($direction: column,$item:flex-start);
+    
+          .jump-box {
+            width: 100%;
+            padding: 15px 20px;
+            background-color: rgba(94, 104, 33, 0.1);
+            @include flex($item: center);
+    
+            .jump-title {
+              color: $text-color;
+              font-size: 1.2rem;
+              margin-right: 10px;
+            }
+    
+            .jump-links {
+              @include flex($wrap: wrap);
+              gap: 5px;
+    
+              .jump-link {
+                font-size: 1rem;
+                text-decoration: none;
+                color: $text-hover;
+    
+                &.green {
+                  color: $e-green;
+                }
+    
+                &.gray {
+                  color: $text-hover;
+                }
+    
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+    
+          .green-line {
+            width: 90%;
+            height: 2px;
+            background-color: $e-green;
+            margin-top: 30px;
+            margin-left: 9.7%;
+          }
+    
+          .plant-list {
+            width: 100%;
+            padding: 1rem;
+    
+            .plant-item {
+              @include flex($item: center);
+              padding: 1rem 0;
+              border-bottom: 1px solid #e7e5d9; 
+    
+              &:last-child {
+                border-bottom: none;
+    
+              }
+    
+              .plant-icon {
+                width: 3rem;
+                height: 4rem;
+                background-color: $discover-background; 
+                @include flex($justify: center,$item:center);
+                margin-left: -1rem;
+                color: $background-color;
+                font-size: 2rem;
+                font-weight: bold;
+                margin-right: 2rem;
+              }
+    
+              .plant-name {
+                font-size: 2rem;
+                font-weight: 500;
+                color: $text-color;
+    
+                &:hover{
+                  color: $e-green;
+                }
+              }
+              .plant-name-m {
+                font-size: 2rem;
+                font-weight: 500;
+                color: $text-color;
+                margin-left: 3.19rem;
+    
+                &:hover{
+                  color: $e-green;
+                }
+              }
+            }
+          }
+        }
+    
+        .care-woodmart-title {
+          h1 {
+            font-size: 68px;
+            margin-bottom: 1rem;
+          }
+    
+          p {
+            font-size: 15px;
+            color: $text-hover;
+            font-weight: bold;
+          }
+        }
+      }
+    }

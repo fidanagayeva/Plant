@@ -221,6 +221,120 @@ hr {
   margin-top: 5.5rem;
 }
 
+.care-title {
+  font-weight: 500;
+  font-size: 28px;
+  color: rgb(94, 104, 33);
+  padding: 1rem;
+}
+
+.care {
+  padding: 1rem;
+}
+.care .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.care .container .jump-container,
+.care .container .care-woodmart-title {
+  width: 50%;
+}
+.care .container .jump-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.care .container .jump-container .jump-box {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(94, 104, 33, 0.1);
+  display: flex;
+  align-items: center;
+}
+.care .container .jump-container .jump-box .jump-title {
+  color: black;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+.care .container .jump-container .jump-box .jump-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.care .container .jump-container .jump-box .jump-links .jump-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: gray;
+}
+.care .container .jump-container .jump-box .jump-links .jump-link.green {
+  color: #5e6821;
+}
+.care .container .jump-container .jump-box .jump-links .jump-link.gray {
+  color: gray;
+}
+.care .container .jump-container .jump-box .jump-links .jump-link:hover {
+  text-decoration: underline;
+}
+.care .container .jump-container .green-line {
+  width: 90%;
+  height: 2px;
+  background-color: #5e6821;
+  margin-top: 30px;
+  margin-left: 9.7%;
+}
+.care .container .jump-container .plant-list {
+  width: 100%;
+  padding: 1rem;
+}
+.care .container .jump-container .plant-list .plant-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e7e5d9;
+}
+.care .container .jump-container .plant-list .plant-item:last-child {
+  border-bottom: none;
+}
+.care .container .jump-container .plant-list .plant-item .plant-icon {
+  width: 3rem;
+  height: 4rem;
+  background-color: #5f6921;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+.care .container .jump-container .plant-list .plant-item .plant-name {
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+}
+.care .container .jump-container .plant-list .plant-item .plant-name:hover {
+  color: #5e6821;
+}
+.care .container .jump-container .plant-list .plant-item .plant-name-m {
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  margin-left: 3.19rem;
+}
+.care .container .jump-container .plant-list .plant-item .plant-name-m:hover {
+  color: #5e6821;
+}
+.care .container .care-woodmart-title h1 {
+  font-size: 68px;
+  margin-bottom: 1rem;
+}
+.care .container .care-woodmart-title p {
+  font-size: 15px;
+  color: gray;
+  font-weight: bold;
+}
+
 .menu-cards {
   display: flex;
   justify-content: space-between;
