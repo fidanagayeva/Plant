@@ -62,3 +62,18 @@ button {
       font-size: 16px;
       color: $text-hover;
     }
+
+    .play {
+        background-color: rgba(255, 255, 255, 0.308);
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+
+        i{
+          font-size: 1.5rem;
+        }
+      }
+
+      .play:hover{
+        background-color: rgba(255, 255, 255, 0.308);
+    }

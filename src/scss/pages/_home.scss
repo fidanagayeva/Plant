@@ -111,3 +111,88 @@
         }
       }
     }
+
+    .discover-section {
+      margin-top: 1.5rem;
+      background-color: $discover-background;
+      width: 100%;
+      height: 650px;
+    
+      .discover-wrapper {
+        @include flex($direction: column);
+        gap: 2rem;
+        padding: 3rem 1.5rem;
+    
+        .icon-bloom,
+        .icon-herb,
+        .icon-herb-second {
+          font-size: 4rem;
+          font-weight: 700;
+          color: $background-color;
+          @include flex($item: center);
+        }
+    
+        .icon-bloom img,
+        .icon-herb img,
+        .icon-herb-second img {
+          margin-left: 1rem;
+        }
+      }
+    
+      .discover-body {
+        @include flex($justify: space-between);
+        margin-top: 4rem; 
+    
+        .body-cards,
+        .media-card {
+          width: 48%;
+          @include flex($direction: column);
+          gap: 1.8rem;
+        }
+    
+        .body-cards {
+          background-color: $body-card-color;
+          padding: 2rem;
+    
+          .card-item {
+            @include flex($direction: column);
+            gap: 1.8rem;
+    
+            .card-header {
+              h3 {
+                font-size: 2.5rem;
+                font-weight: 600;
+              }
+            }
+    
+            .card-author {
+              gap: 1rem;
+              @include flex($item: center);
+              margin-top: 0.5rem;
+            }
+          }
+        }
+    
+        .media-card {
+          position: relative;
+    
+          img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+          }
+    
+          a {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: $background-color;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+
+    
