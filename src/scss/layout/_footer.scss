@@ -1,3 +1,160 @@
 @use "../utils/variables" as *;
 @use "../utils/mixin" as *;
 @use "../base/reset" as *;
+
+
+
+.footer {
+    @include flex($direction: row);
+    padding: 30px;
+    box-sizing: border-box;
+    border-top: 2px solid $button-color;
+    border-bottom: 2px solid $button-color;
+  }
+  
+  .left-section {
+    width: 40%;
+    text-align: start;
+    margin-right: 9%;
+    margin-left: -45px;
+  }
+  
+  .right-section {
+    width: 55%;
+    @include flex($justify: space-between);
+  }
+  
+  .logo {
+    margin-bottom: 25px;
+  }
+  
+  .newsletter h2 {
+    font-size: 27px;
+    margin-bottom: 25px;
+  }
+  
+  .subscription-form {
+    @include flex($justify: start);
+    margin-bottom: 25px;
+  }
+  
+  .subscription-form input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid $email-bg-color;
+    margin-right: 1rem;
+    flex: 1;
+    height: 23px;
+    font-size: 15px;
+    background-color: $email-bg-color;
+  }
+  
+  .subscription-form button {
+    padding: 0.5rem 1rem;
+    background-color: $button-color;
+    color: $background-color;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: $button-color-hover;
+    }
+  }
+  
+  .privacy {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  .social-media {
+    @include flex($justify: start);
+    margin: 1rem 0;
+  }
+  
+  .social-icon {
+    @include flex($justify: center,$item: center);
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 2px solid $e-green;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    color: $e-green;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+      background-color: #5e6821;
+      color: $background-color;
+    }
+  }
+  
+  .shop, .useful-links, .contacts {
+    position: relative;
+    flex: 1;
+    .title {
+      font-size: 25px;
+      margin-bottom: 25px;
+      margin-left: 15px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-bottom: 20px;
+        font-size: 17px;
+        margin-left: 15px;
+        a {
+          text-decoration: none;
+          color: #333;
+          &:hover {
+            color: #7c8c42;
+          }
+        }
+      }
+    }
+  }
+  
+  .shop::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: $button-color;
+  }
+  
+  .contacts {
+    .email, .phone, .address {
+      margin-bottom: 25px;
+      &:hover {
+        color: $button-color;
+      }
+    }
+  }
+  
+  hr {
+    border: 0;
+    height: 2px;
+    background: $button-color; 
+    margin: 20px 0;
+    margin-left: 20px; 
+    margin-right: 20px; 
+  }
+  
+  .footer-bottom {
+    @include flex($justify: space-between, $item:center, $wrap:wrap);
+    padding: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  
+    p {
+      margin: 0;
+      color: rgb(80, 80, 80);
+      font-weight: bold;
+    }
+  
+    .footer-bottom-cards {
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+  }

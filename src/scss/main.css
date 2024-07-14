@@ -719,6 +719,166 @@ hr {
   pointer-events: auto;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  box-sizing: border-box;
+  border-top: 2px solid rgb(94, 104, 33);
+  border-bottom: 2px solid rgb(94, 104, 33);
+}
+
+.left-section {
+  width: 40%;
+  text-align: start;
+  margin-right: 9%;
+  margin-left: -45px;
+}
+
+.right-section {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-bottom: 25px;
+}
+
+.newsletter h2 {
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 25px;
+}
+
+.subscription-form input[type=email] {
+  padding: 0.5rem;
+  border: 1px solid rgba(94, 104, 33, 0.0901960784);
+  margin-right: 1rem;
+  flex: 1;
+  height: 23px;
+  font-size: 15px;
+  background-color: rgba(94, 104, 33, 0.0901960784);
+}
+
+.subscription-form button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(94, 104, 33);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.subscription-form button:hover {
+  background-color: rgb(89, 99, 28);
+}
+
+.privacy {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: start;
+  margin: 1rem 0;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 2px solid #5e6821;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  color: #5e6821;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.social-icon:hover {
+  background-color: #5e6821;
+  color: white;
+}
+
+.shop, .useful-links, .contacts {
+  position: relative;
+  flex: 1;
+}
+.shop .title, .useful-links .title, .contacts .title {
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
+.shop ul, .useful-links ul, .contacts ul {
+  list-style: none;
+  padding: 0;
+}
+.shop ul li, .useful-links ul li, .contacts ul li {
+  margin-bottom: 20px;
+  font-size: 17px;
+  margin-left: 15px;
+}
+.shop ul li a, .useful-links ul li a, .contacts ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.shop ul li a:hover, .useful-links ul li a:hover, .contacts ul li a:hover {
+  color: #7c8c42;
+}
+
+.shop::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: rgb(94, 104, 33);
+}
+
+.contacts .email, .contacts .phone, .contacts .address {
+  margin-bottom: 25px;
+}
+.contacts .email:hover, .contacts .phone:hover, .contacts .address:hover {
+  color: rgb(94, 104, 33);
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: rgb(94, 104, 33);
+  margin: 20px 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.footer-bottom p {
+  margin: 0;
+  color: rgb(80, 80, 80);
+  font-weight: bold;
+}
+.footer-bottom .footer-bottom-cards {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
 .header {
   margin: 10px 0;
 }
