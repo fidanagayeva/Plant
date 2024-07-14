@@ -364,12 +364,71 @@
     }
     
     .about-img {
-      @include flex($content);
+      @include flex($justify:center);
       margin: 1rem 0 3.5rem;
     
       img{
         max-width: 100%;
         height: auto;
         border: 0;
+      }
+    }
+
+    .history-section {
+      @include flex($justify: space-between,$item:flex-start);
+      padding: 1.3rem;
+      
+      .left-content {
+        width: 50%;
+    
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 20px;
+          font-weight: 450;
+        }
+    
+        p {
+          font-size: 1rem;
+          color: #666;
+          margin-bottom: 20px;
+          line-height: 1.6;
+        }
+      }
+    
+      .right-content {
+        width: 40%;
+        @include flex($direction: column);
+        gap: 40px;
+        margin-top: 2.5rem;
+    
+        .timeline-item {
+          @include flex($justify: space-between,$item:center);
+          position: relative;
+          padding-bottom: 10px;
+    
+          h2 {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: $text-color;
+            margin: 0 0 2.3rem;
+        }
+    
+          .year {
+            font-size: 2.5rem;
+            color: #d4d4d4;
+            font-weight: bold;
+            margin: 0 0 2.3rem;
+          }
+    
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $button-color; 
+          }
+        }
       }
     }
