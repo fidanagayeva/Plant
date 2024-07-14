@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.6/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="../src/scss/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <nav class="header__nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="index.html">Shop <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="visible">
+                            <div class="dropdown-content">
+                                <div class="category">
+                                    <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plants.jpg.webp"
+                                        alt="">
+                                    <p>Plants</p>
+                                    <span>25 products</span>
+                                </div>
+                                <div class="category">
+                                    <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-planters.jpg.webp"
+                                        alt="">
+                                    <p>Planters</p>
+                                    <span>12 products</span>
+                                </div>
+                                <div class="category">
+                                    <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-plant-care.jpg.webp"
+                                        alt="">
+                                    <p>Plant care</p>
+                                    <span>12 products</span>
+                                </div>
+                                <div class="category">
+                                    <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-pet-friendly.jpg.webp"
+                                        alt="">
+                                    <p>Pet friendly</p>
+                                    <span>12 products</span>
+                                </div>
+                                <div class="category">
+                                    <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-ps-categorie-gift-ideas.jpg.webp"
+                                        alt="">
+                                    <p>Gift ideas</p>
+                                    <span>12 products</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="care.html">Care library</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="header__logo">
+                <img src="https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/woodmart-plant-store-logo.svg"
+                    alt="">
+            </div>
+            <div class="header__actions">
+                <a href="#">Login / Register</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i> 0</a>
+                <a href="#" id="openSidebarBtn"><i class="fa-solid fa-bag-shopping"></i> 0 / $0.00</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <div id="sidebar" class="sidebar">
+        <p>Shopping cart</p>
+        <a href="#" id="closeSidebarBtn" class="closebtn"><i class="fa-solid fa-xmark"></i>Close</a>
+        <div class="sidebar-content">
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.6/swiper-bundle.min.js"></script>
+    <script src="../src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
