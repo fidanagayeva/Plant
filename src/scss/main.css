@@ -199,6 +199,20 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 
+.product-card-title-h2p h2 {
+  margin-top: 10.5rem;
+  margin-bottom: 1.3rem;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 1.3rem;
+}
+
+.product-card-title-h2p p {
+  font-size: 17px;
+  color: gray;
+  margin-left: 1.3rem;
+}
+
 .menu-cards {
   display: flex;
   justify-content: space-between;
@@ -392,6 +406,124 @@ hr {
 .card .card-price .card-old-price {
   text-decoration: line-through;
   color: #888;
+}
+
+.widhter {
+  width: 300px;
+}
+
+.heighter {
+  height: 272px;
+}
+
+.product-card {
+  display: flex;
+  justify-content: space-between;
+  width: max;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  gap: 10px;
+  height: 550px;
+}
+.product-card .product-image-container {
+  position: relative;
+  width: 100%;
+  height: 17rem;
+}
+.product-card .product-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity 1s ease;
+}
+.product-card .product-image-container img.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.product-card .product-image-container .discount-badge {
+  position: absolute;
+  top: 10px;
+  background: white;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  width: 3.7rem;
+  height: 1.3rem;
+}
+.product-card .product-image-container .discount-new {
+  position: absolute;
+  top: 45px;
+  background: white;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  width: 3.7rem;
+  height: 1.3rem;
+}
+.product-card .product-image-container:hover .hover-image {
+  opacity: 1;
+}
+.product-card .product-image-container:hover .main-image {
+  opacity: 0;
+}
+.product-card .product-image-container:hover .icon-box {
+  display: flex;
+}
+.product-card .product-info {
+  margin-top: 15px;
+}
+.product-card .product-info .color-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.product-card .product-info .color-options .color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+.product-card .product-info .color-options .color.black {
+  background: black;
+}
+.product-card .product-info .color-options .color.white {
+  background: white;
+  border: 1px solid #ccc;
+}
+.product-card .product-info .color-options .color.beige {
+  background: #f5deb3;
+}
+.product-card .product-info .color-options .color.pink {
+  background: rgb(253, 239, 241);
+}
+.product-card .product-info h2 {
+  font-size: 15px;
+  color: black;
+  margin: 5px 0;
+}
+.product-card .product-info .rating {
+  color: #FFD700;
+  margin-bottom: 5px;
+}
+.product-card .product-info .price {
+  margin-bottom: 10px;
+}
+.product-card .product-info .price .original-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 5px;
+}
+.product-card .product-info .price .discounted-price {
+  color: black;
+  font-weight: bold;
 }
 
 .header {
@@ -651,4 +783,35 @@ button:hover {
 
 .play:hover {
   background-color: rgba(255, 255, 255, 0.308);
+}
+
+button {
+  padding: 10px 15px;
+  background: rgb(94, 104, 33);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 1s ease;
+}
+button:hover {
+  background: rgb(89, 99, 28);
+}
+
+.icon-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 5px;
+  display: none;
+  width: 50px;
+  height: 80px;
+  gap: 0.7rem;
+}
+.icon-box i {
+  margin: 5px 0;
+  color: black;
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */

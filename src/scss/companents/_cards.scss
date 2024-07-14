@@ -221,4 +221,143 @@
     }
   
   }
+
+  .widhter {
+    width: 300px;
+  }
+  
+  .heighter {
+    height: 272px;
+  }
+  
+  .product-card {
+    @include flex($justify: space-between);
+    width: max;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    gap: 10px;
+    height: 550px;
+  
+    .product-image-container {
+      position: relative;
+      width: 100%;
+      height: 17rem;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 1s ease;
+  
+        &.hover-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
+  
+  
+      .discount-badge {
+        position: absolute;
+        top: 10px;
+        background: $background-color;
+        padding: 2px 6px;
+        font-size: 12px;
+        font-weight: bold;
+        color: $text-color;
+        width: 3.7rem;
+        height: 1.3rem;
+      }
+  
+      .discount-new {
+        position: absolute;
+        top: 45px;
+        background: $background-color;
+        padding: 2px 6px;
+        font-size: 12px;
+        font-weight: bold;
+        color: $text-color;
+        width: 3.7rem;
+        height: 1.3rem;
+      }
+  
+      &:hover {
+        .hover-image {
+          opacity: 1;
+        }
+  
+        .main-image {
+          opacity: 0;
+        }
+  
+        .icon-box {
+          display: flex;
+        }
+      }
+    }
+  
+    .product-info {
+      margin-top: 15px;
+  
+      .color-options {
+        @include flex($justify: center);
+        margin-bottom: 5px;
+  
+        .color {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          margin: 0 3px;
+  
+          &.black {
+            background: $text-color;
+          }
+  
+          &.white {
+            background: $background-color;
+            border: 1px solid #ccc;
+          }
+  
+          &.beige {
+            background: #f5deb3;
+          }
+  
+          &.pink {
+            background: rgb(253, 239, 241);
+          }
+        }
+      }
+  
+      h2 {
+        font-size: 15px;
+        color: $text-color;
+        margin: 5px 0;
+      }
+  
+      .rating {
+        color: #FFD700;
+        margin-bottom: 5px;
+      }
+  
+      .price {
+        margin-bottom: 10px;
+  
+        .original-price {
+          text-decoration: line-through;
+          color: $text-hover;
+          margin-right: 5px;
+        }
+  
+        .discounted-price {
+          color: $text-color;
+          font-weight: bold;
+        }
+      }
+  
+    }
+  }
   
