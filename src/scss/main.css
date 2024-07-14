@@ -526,6 +526,132 @@ hr {
   font-weight: bold;
 }
 
+.custom-articles {
+  padding: 1rem 1rem;
+}
+.custom-articles .custom-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding-bottom: 2.5rem;
+}
+.custom-articles .custom-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.custom-articles .custom-cards .custom-card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.0625rem solid #e3e3e3;
+}
+.custom-articles .custom-cards .custom-card:hover .custom-card-img img {
+  transform: scale(1.1);
+}
+.custom-articles .custom-cards .custom-card.custom-card-last {
+  border-bottom: none;
+}
+.custom-articles .custom-cards .custom-card .custom-card-img {
+  overflow: hidden;
+  position: relative;
+}
+.custom-articles .custom-cards .custom-card .custom-card-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 15rem;
+  width: 22rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.custom-articles .custom-cards .custom-card .custom-card-img .custom-card-img-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100%;
+  top: 0px;
+  position: absolute;
+}
+.custom-articles .custom-cards .custom-card .custom-card-img .custom-card-img-content .custom-card-img-date {
+  font-weight: 600;
+  text-align: center;
+  width: 3.75rem;
+  height: 2.7rem;
+  padding: 0;
+  background-color: white;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information .custom-card-content-information-first {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(182, 182, 182);
+  font-weight: bold;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information .custom-card-content-information-first img {
+  border-radius: 2rem;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information .custom-card-content-information-first .custom-author {
+  cursor: pointer;
+  color: rgb(182, 182, 182);
+  font-weight: bold;
+  transition: all 0.25s ease-in-out;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information .custom-card-content-information-first .custom-author:hover {
+  opacity: 1;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information .custom-card-content-information-first .fa-share-nodes,
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information .custom-card-content-information-first .fa-comment {
+  cursor: pointer;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information .custom-card-content-information-first .comment-icon-container {
+  position: relative;
+  display: inline-block;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information .custom-card-content-information-first .comment-icon-container .comment-badge {
+  position: absolute;
+  top: -0.1875rem;
+  right: -0.625rem;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.4375rem;
+  font-weight: bold;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information .custom-card-content-information-second {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-information .custom-card-content-information-second i {
+  cursor: pointer;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-name {
+  font-size: 2.0625rem;
+  font-weight: normal;
+  width: 45rem;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-name h2 {
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.custom-articles .custom-cards .custom-card .custom-card-content .custom-card-content-name h2:hover {
+  opacity: 0.8;
+}
+
 .header {
   margin: 10px 0;
 }
@@ -814,4 +940,34 @@ button:hover {
   margin: 5px 0;
   color: black;
   font-size: 20px;
+}
+
+.custom-card-btn {
+  display: flex;
+  align-items: center;
+}
+.custom-card-btn button {
+  width: 10rem;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(94, 104, 33);
+  color: white;
+  padding: 0.75rem 1.25rem;
+}
+.custom-card-btn button:hover {
+  background-color: rgb(89, 99, 28);
+}
+
+.custom-card-img-btn button {
+  cursor: pointer;
+  border: none;
+  background-color: rgb(94, 104, 33);
+  color: white;
+  padding: 0.25rem 0.375rem;
+  font-weight: bold;
+  font-size: 11px;
+}
+.custom-card-img-btn button:hover {
+  background-color: rgb(89, 99, 28);
+  color: gray;
 }/*# sourceMappingURL=main.css.map */

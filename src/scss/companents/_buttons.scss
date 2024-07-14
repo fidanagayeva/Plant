@@ -109,3 +109,37 @@ button {
           font-size: 20px;
         }
       }
+
+      .custom-card-btn {
+        @include flex($item: center);
+
+      button {
+        width: 10rem;
+        cursor: pointer;
+        border: none;
+        background-color: $button-color;
+        color: white;
+        padding: 0.75rem 1.25rem;
+
+        &:hover {
+          background-color: $button-color-hover;
+        }
+      }
+    }
+
+    .custom-card-img-btn {
+        button {
+          cursor: pointer;
+          border: none;
+          background-color: $button-color;
+          color: $background-color;
+          padding: 0.25rem 0.375rem;
+          font-weight: bold;
+          font-size: 11px;
+
+          &:hover {
+            background-color: $button-color-hover;
+            color: $text-hover;
+          }
+        }
+      }
