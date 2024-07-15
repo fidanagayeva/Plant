@@ -153,26 +153,6 @@ getProducts();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function addToCart(productId) {
     fetch("http://localhost:3001/Products")
         .then(response => response.json())
